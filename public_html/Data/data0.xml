@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+   <head>
+      <icon root="Image/Head/Icon/">
+         <left>
+            <icon name="main" nameC="首 頁" nameE="Home" linkTo="main" />
+            <icon name="news" nameC="消 息" nameE="News" linkTo="news" />
+            <icon name="function" nameC="活 動" nameE="Function" linkTo="function" />
+            <icon name="aboutus" nameC="我 們" nameE="Aboutus" linkTo="aboutus" />
+            <icon name="sponsor" nameC="贊 助" nameE="Sponsor" linkTo="sponsor" />
+         </left>
+         <right>
+            <icon name="email" nameC="郵 件" nameE="Email" hyperlink="mailto:su_cfas@connect.ust.hk"/>
+            <icon name="facebook" nameC="臉 書" nameE="Facebook" hyperlink="https://www.facebook.com/hkustcfas" />
+            <icon name="wechat" nameC="微 信" nameE="Wechat" linkTo="wechat" />
+            <icon name="setting" nameC="设 置" nameE="Setting" linkTo="setting" />
+         </right>
+      </icon>
+   </head>
+   <!-- 这里的数据结构就决定了什么 URL 可以被读取 -->
+   <!-- cardBoad 是主頁形式的頁面-->
+   <!-- 要注意，在這些大的框架裡面放comments可能會導致問題（因為代碼會一個一個 node 看，而 comments 本質也是node） -->
+   <cardBoard sceneRoot="Image/Scene/">
+      <main widthL="80" heightL="80" space="20" cardPosX="0" cardPosY="-116" topLogoPosX="0" topLogoPosY="230" scene="autumn1.jpg">
+         <card>
+            <function widthA="5" heightA="3" blockX="-4" blockY="2" imgSize="full" timeDelay="3" titleC="活 動" titleE="Function" linkTo="function">
+               <img root="Image/CardBoard/Function/">
+                  <img name="1.png" />
+                  <img name="2.png" />
+                  <img name="3.png" />
+                  <img name="4.png" />
+                  <img name="5.png" />
+                  <img name="6.png" />
+                  <img name="7.png" />
+                  <img name="8.jpg" />
+                  <img name="9.jpg" />
+               </img>
+            </function>
+            <aboutus widthA="3" heightA="2" blockX="1" blockY="2" imgSize="full" timeDelay="9" titleC="我 們" titleE="About us" linkTo="aboutus">
+               <img root="Image/CardBoard/Aboutus/">
+                  <img name="Cici.jpg" />
+                  <img name="Coral.jpg" />
+                  <img name="Deckard.jpg" />
+                  <img name="Ethan.jpg" />
+                  <img name="Holly.jpg" />
+                  <img name="Tony.jpg" />
+               </img>
+            </aboutus>
+            <sponsor widthA="3" heightA="2" blockX="1" blockY="0" imgSize="integral" timeDelay="12" titleC="贊 助" titleE="Sponsor" linkTo="sponsor">
+               <img root="Image/Page/Sponsor/">
+                  <img name="17.png" />
+                  <img name="18.png" />
+                  <img name="19.png" />
+                  <img name="20.jpg" />
+                  <img name="21.jpg" />
+                  <img name="22.png" />
+                  <img name="23.png" />
+                  <img name="24.jpg" />
+                  <img name="25.jpg" />
+                  <img name="26.jpg" />
+                  <img name="27.png" />
+               </img>
+            </sponsor>
+
+            <setting widthA="1" heightA="1" blockX="-4" blockY="-1" imgSize="integral" timeDelay="12" linkTo="setting">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="setting.png" />
+               </img>
+            </setting>
+            
+            <wechat widthA="1" heightA="1" blockX="-3" blockY="-1" imgSize="integral" timeDelay="12" linkTo="wechat">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="wechat.png" />
+               </img>
+            </wechat>
+            <facebook widthA="1" heightA="1" blockX="-2" blockY="-1" imgSize="integral" timeDelay="12" hyperlink="https://www.facebook.com/hkustcfas">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="facebook.png" />
+               </img>
+            </facebook>
+            
+            <email widthA="1" heightA="1" blockX="-1" blockY="-1" imgSize="integral" timeDelay="12" hyperlink="mailto:su_cfas@connect.ust.hk">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="email.png" />
+               </img>
+            </email>
+
+            <news widthA="1" heightA="1" blockX="0" blockY="-1" imgSize="integral" timeDelay="0" linkTo="news">
+               <img root="Image/CardBoard/News/">
+                  <img name="1.png" />
+               </img>
+            </news>
+         </card>
+      </main>
+      <function widthL="183" heightL="110" space="22" scene="wheat1.jpg" cardPosX="0" cardPosY="-121" topLogoPosX="0" topLogoPosY="186" backTo="">
+         <card>
+            <current widthA="2" heightA="2" blockX="-2" blockY="1" imgSize="full" timeDelay="0" titleC="本 莊" titleE="Current" linkTo="current">
+               <img root="Image/CardBoard/Function/">
+                  <img name="1.png" />
+                  <img name="4.png" />
+               </img>
+            </current>
+            <past widthA="2" heightA="2" blockX="0" blockY="1" imgSize="full" timeDelay="3" titleC="往  年" titleE="Past" linkTo="past">
+               <img root="Image/CardBoard/Past/">
+                  <img name="1.jpg" />
+                  <img name="4.jpg" />
+                  <img name="2.jpg" />
+                  <img name="5.jpg" />
+                  <img name="3.jpg" />
+                  <img name="6.jpg" />
+               </img>
+            </past>
+         </card>
+      </function>
+      <aboutus widthL="50" heightL="50" space="22" scene="dandelion1.jpg" cardPosX="0" cardPosY="-121" topLogoPosX="0" topLogoPosY="186" backTo="">
+         <card>
+            <society widthA="3.5" heightA="4" blockX="-6.5" blockY="2" imgSize="full" timeDelay="0" titleC="民藝坊" titleE="Society" linkTo="society">
+               <img root="Image/CardBoard/Society/">
+                  <img name="1.jpg" />
+               </img>
+            </society>
+            <exco16 widthA="6" heightA="4" blockX="-3" blockY="2" imgSize="intelligent" timeDelay="0" titleC="拾陆莊" titleE="The 16th" linkTo="exco16">
+               <img root="Image/CardBoard/Exco16/">
+                  <img name="1.jpg" />
+               </img>
+            </exco16>
+            <excoB widthA="4" heightA="4" blockX="3" blockY="2" imgSize="intelligent" timeDelay="6" titleC="老  莊" titleE="Elder" linkTo="excoB">
+               <img root="Image/CardBoard/ExcoB/">
+                  <img name="1.jpg" />
+                  <img name="2.jpg" />
+                  <img name="3.jpg" />
+                  <img name="4.jpg" />
+                  <img name="5.jpg" />
+                  <img name="6.jpg" />
+                  <img name="7.jpg" />
+               </img>
+            </excoB>
+         </card>
+      </aboutus>
+      <mail widthL="50" heightL="50" space="22" scene="grass3.jpg" cardPosX="0" cardPosY="-121" topLogoPosX="0" topLogoPosY="186" backTo="">
+         <card>
+            <mailEvent widthA="3.5" heightA="4" blockX="-6.5" blockY="2" imgSize="full" timeDelay="0" titleC="事  件" titleE="Events">
+               <img root="Image/CardBoard/MailEvent/">
+                  <img name="1.jpg" />
+               </img>
+            </mailEvent>
+            <mailCuisine widthA="6" heightA="4" blockX="-3" blockY="2" imgSize="full" timeDelay="0" titleC="美  食" titleE="Cuisine" linkTo="mailCuisine">
+               <img root="Image/CardBoard/MailCuisine/">
+                  <img name="1.jpg" />
+                  <img name="2.jpg" />
+                  <img name="3.jpg" />
+                  <img name="4.jpg" />
+                  <img name="5.jpg" />
+               </img>
+            </mailCuisine>
+            <mailFunction widthA="4" heightA="4" blockX="3" blockY="2" imgSize="integral" timeDelay="6" titleC="活  動" titleE="Functions">
+               <img root="Image/CardBoard/MailFunction/">
+                  <img name="1.png" />
+                  <img name="2.png" />
+                  <img name="3.png" />
+               </img>
+            </mailFunction>
+         </card>
+      </mail>
+   </cardBoard>
+   <!-- cardBoadV 是主頁形式的頁面，但是是豎著排版-->
+   <cardBoardV sceneRoot="Image/Scene/">
+      <main widthL="155" heightL="155" space="20" cardPosX="0" cardPosY="-240" topLogoPosX="0" topLogoPosY="545" scene="autumn1.jpg">
+         <card>
+            <function widthA="4" heightA="3" blockX="-2.5" blockY="3.5" imgSize="full" timeDelay="20" titleC="活  動" titleE="Function" linkTo="function">
+               <img root="Image/CardBoard/Function/">
+                  <img name="1.png" />
+                  <img name="2.png" />
+                  <img name="3.png" />
+               </img>
+            </function>
+            
+            <aboutus widthA="2" heightA="2" blockX="-2.5" blockY="0.5" imgSize="full" timeDelay="30" titleC="我  們" titleE="About us" linkTo="aboutus">
+               <img root="Image/CardBoard/Aboutus/">
+                  <img name="Cici.jpg" />
+                  <img name="Coral.jpg" />
+                  <img name="Deckard.jpg" />
+                  <img name="Ethan.jpg" />
+                  <img name="Holly.jpg" />
+                  <img name="Tony.jpg" />
+               </img>
+            </aboutus>
+            <sponsor widthA="2" heightA="2" blockX="-0.5" blockY="0.5" imgSize="integral" timeDelay="40" titleC="贊  助" titleE="Sponsor" linkTo="sponsor">
+               <img root="Image/Page/Sponsor/">
+                  <img name="28.jpg" />
+                  <img name="29.jpg" />
+                  <img name="30.jpg" />
+                  <img name="31.png" />
+                  <img name="32.jpg" />
+               </img>
+            </sponsor>
+
+            <news widthA="1" heightA="1" blockX="1.5" blockY="3.5" imgSize="full" timeDelay="0" linkTo="news">
+               <img root="Image/CardBoard/News/">
+                  <img name="1.png" />
+               </img>
+            </news>
+            <email widthA="1" heightA="1" blockX="1.5" blockY="2.5" imgSize="full" timeDelay="0" linkTo="email">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="email.png" />
+               </img>
+            </email>
+            <facebook widthA="1" heightA="1" blockX="1.5" blockY="1.5" imgSize="full" timeDelay="0" hyperlink="https://www.facebook.com/hkustcfas">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="facebook.png" />
+               </img>
+            </facebook>
+            <wechat widthA="1" heightA="1" blockX="1.5" blockY="0.5" imgSize="integral" timeDelay="0" linkTo="wechat">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="wechat.png" />
+               </img>
+            </wechat>
+            <setting widthA="1" heightA="1" blockX="1.5" blockY="-0.5" imgSize="integral" timeDelay="0" linkTo="setting">
+               <img root="Image/CardBoard/Contact/">
+                  <img name="setting.png" />
+               </img>
+            </setting>
+         </card>
+      </main>
+      <function widthL="750" heightL="390" space="25" scene="wheat1.jpg" cardPosX="0" cardPosY="-160" topLogoPosX="0" topLogoPosY="446" backTo="">
+         <card>
+            <current widthA="1" heightA="1" blockX="-0.5" blockY="1" imgSize="full" timeDelay="0" titleC="本 莊" titleE="Current" linkTo="current">
+               <img root="Image/CardBoard/Function/">
+                  <img name="1.png" />
+               </img>
+            </current>
+            <past widthA="1" heightA="1" blockX="-0.5" blockY="0" imgSize="full" timeDelay="3" titleC="往  年" titleE="Past" linkTo="past">
+               <img root="Image/CardBoard/Past/">
+                  <img name="1.jpg" />
+               </img>
+            </past>
+         </card>
+      </function>
+      <aboutus widthL="140" heightL="130" space="18" scene="dandelion1.jpg" cardPosX="0" cardPosY="-210" topLogoPosX="0" topLogoPosY="426" backTo="">
+         <card>
+            <society widthA="2" heightA="2.5" blockX="-2.5" blockY="3" imgSize="full" timeDelay="0" titleC="民藝坊" titleE="Society" linkTo="society">
+               <img root="Image/CardBoard/Society/">
+                  <img name="1.jpg" />
+               </img>
+            </society>
+            <excoB widthA="3" heightA="2.5" blockX="-0.5" blockY="3" imgSize="full" timeDelay="3" titleC="老  莊" titleE="Elder" linkTo="excoB">
+               <img root="Image/CardBoard/ExcoB/">
+                  <img name="1.jpg" />
+               </img>
+            </excoB>
+            <exco16 widthA="5" heightA="3" blockX="-2.5" blockY="0.5" imgSize="full" timeDelay="6" titleC="拾陆莊" titleE="The 16th" linkTo="exco16">
+               <img root="Image/CardBoard/Exco16/">
+                  <img name="1.jpg" />
+               </img>
+            </exco16>
+         </card>
+      </aboutus>
+      <mail widthL="140" heightL="130" space="18" scene="grass3.jpg" cardPosX="0" cardPosY="-210" topLogoPosX="0" topLogoPosY="426" backTo="">
+         <card>
+            <mailEvent widthA="2" heightA="2.5" blockX="-2.5" blockY="3" imgSize="full" timeDelay="0" titleC="事  件" titleE="Events" linkTo="mailEvent">
+               <img root="Image/CardBoard/MailEvent/">
+                  <img name="1.jpg" />
+               </img>
+            </mailEvent>
+            <mailFunction widthA="3" heightA="2.5" blockX="-0.5" blockY="3" imgSize="integral" timeDelay="0" titleC="活  動" titleE="Functions" linkTo="mailFunction">
+               <img root="Image/CardBoard/MailFunction/">
+                  <img name="1.png" />
+               </img>
+            </mailFunction>
+            <mailCuisine widthA="5" heightA="3" blockX="-2.5" blockY="0.5" imgSize="full" timeDelay="3" titleC="美  食" titleE="Cuisine" linkTo="mailCuisine">
+               <img root="Image/CardBoard/MailCuisine/">
+                  <img name="1.jpg" />
+               </img>
+            </mailCuisine>
+         </card>
+      </mail>
+   </cardBoardV>
+   
+   <!-- frame 是大部分咨詢的頁面，是鏈接的再點，比如 /#!past 就会从 <past ...> </past> 裡面讀取信息 -->
+   <!-- 每個 frame 裡面都會包含一些 page，這些 page 跟 Custom.js 裡面的 PAGE[] 是對應的-->
+   <!-- 比如如果想要展示 <p functionO15 ... /> 在 Custom.js 裡面必須要有一個 buildPage，比如 buildPageFunction15()，來定義 PAGE[functionO15]-->
+   <frame sceneRoot="Image/Scene/">
+      <news titleC="消  息" titleE="News" titleImg="Image/Frame/News/title.jpg" backTo="" jumpType="anchor">
+         <page>
+            <p name="news" />
+         </page>
+      </news>
+      <current titleC="活  動" titleE="Function" titleImg="Image/Frame/Current/title.jpg" scene="wheat1.jpg" backTo="function" jumpType="anchor">
+         <page>
+            <p name="functionC" />
+         </page>
+      </current>
+      <past titleC="往  年" titleE="Past" titleImg="Image/Frame/Past/title.jpg" scene="wheat1.jpg" backTo="function" jumpType="page">
+         <page>
+            <p name="functionO15" nameC="拾伍莊" nameE="2019-2020"/>
+            <p name="functionO14" nameC="拾肆莊" nameE="2018-2019" />
+            <p name="functionO13" nameC="拾叁莊" nameE="2017-2018" />
+            <p name="functionO12" nameC="拾貳莊" nameE="2016-2017" />
+            <p name="functionO11" nameC="拾壹莊" nameE="2015-2016" />
+            <p name="functionO10" nameC="拾   莊" nameE="2014-2015" />
+            <p name="functionO09" nameC="玖   莊" nameE="2013-2014" />
+         </page>
+      </past>
+      <society titleC="民 藝 坊" titleE="Society" titleImg="Image/Frame/Society/title.jpg" scene="dandelion1.jpg" backTo="aboutus" jumpType="page">
+         <page>
+            <p name="societyIntroduction" nameC="簡  介" nameE="Introduction" />
+            <p name="societyMission" nameC="宗  旨" nameE="Mission" />
+            <p name="constitution" nameC="憲  法" nameE="Constitution" />
+         </page>
+      </society>
+      <exco16 titleC="拾 陸 莊" titleE="The 16th Ex-cos" titleImg="Image/Frame/Exco12/title.jpg" scene="dandelion1.jpg" backTo="aboutus" jumpType="page">
+         <page>
+            <p name="exco16" nameC="莊  員" nameE="Exco" />
+            <p name="yearPlan" nameC="年度計劃" nameE="Year Plan" />
+            <p name="financialPlan" nameC="財政計劃" nameE="Financial Plan" />
+         </page>
+      </exco16>
+      <excoB titleC="老  莊" titleE="Elders" titleImg="Image/Frame/ExcoB/title.jpg" scene="dandelion1.jpg" backTo="aboutus" jumpType="page">
+         <page>
+         	<P name="exco15" nameC="拾伍莊" nameE="2019-2020" />
+            <P name="exco14" nameC="拾肆莊" nameE="2018-2019" />
+            <P name="exco13" nameC="拾叁莊" nameE="2017-2018" />
+            <P name="exco12" nameC="拾貳莊" nameE="2016-2017" />
+            <p name="exco11" nameC="拾壹莊" nameE="2015-2016" />
+            <p name="exco10" nameC="拾   莊" nameE="2014-2015" />
+            <p name="exco09" nameC="玖   莊" nameE="2013-2014" />
+         </page>
+      </excoB>
+      <mailCuisine titleC="美食郵件" titleE="Cuisine Email" titleImg="Image/Frame/MailCuisine/title.jpg" scene="grass3.jpg" backTo="mail" jumpType="page">
+         <page />
+      </mailCuisine>
+      <sponsor titleC="贊 助 商" titleE="Sponsors" titleImg="Image/Frame/Sponsor/title.jpg" backTo="" jumpType="null">
+         <page>
+            <p name="sponsor" />
+         </page>
+      </sponsor>
+   </frame>
+   <!-- Sehll 指彈窗，可以參考微信和設置 -->
+   <shell>
+      <signup titleC="報  名" titleE="Sign Up" page="signup" wLogin="true" />
+      <signupC titleC="報  名" titleE="Sign Up" page="signupC" wLogin="true" />
+      <email titleC="郵  件" titleE="Email" page="email" wLogin="true" />
+      <wechat titleC="微  信" titleE="Wechat" page="wechat" />
+      <setting titleC="設  置" titleE="Setting" page="setting" />
+      <cookGame titleC="廚神爭霸" titleE="Master of Cook" page="cookGame" />
+      <cookGame2 titleC="廚神爭霸" titleE="Master of Cook" page="cookGame2" />
+      <lanternGame titleC="元宵佳節" titleE="Lantern Festival" page="lanternGame" />
+      <image titleC="" titleE="" page="image" />
+   </shell>
+   <societyIntroduction titleC="介紹一下我們的社團" titleE="INTRODUCING OUR SOCIETY" wordC="香港科技大學學生會中國民間藝術坊，簡稱民藝坊，是目前校內最大的由大陸生創建的社團，至今已有16年歷史，擁有來自世界各地不同文化背景的會員700多名。民藝坊所舉辦的活動內容極富中國傳統文化底蘊，為來自各國各地，對中國文化感興趣的會員提供了壹個生動活躍的學習社交平臺。同時，其豐富多彩的活動形式，包括手工講習會，廚神大賽，文化之旅，知識講座，免費代購服務，美食介紹郵件，會員年終福利發放等等，為全體會員提供全方位的暖心服務。" wordE="CFAS, short for Chinese Folk Art Society, HKUST Student Union, is the largest student society initiated by mainland students in UST. With its history of fourteen years, the society is serving over seven hundred members from diverse backgrounds. Events are designed and held with rich Chinese history and culture, which cater for students with enthusiasm for knowing about China. Meanwhile, the abundant activities, including workshops, cooking competitions, trips, lectures, as well as the full range of services, play important roles in the campus lives of many local and non-local students." />
+   <societyMission titleC="我們秉持這樣的宗旨" titleE="MISSIONS WE ARE CARRYING OUT" wordC="用創新精神與滿腔熱忱構建文化交流的橋樑，令會員在和而不同、美美與共的和諧氛圍中感受中國傳統民間藝術的多彩魅力。" wordE="The focus of the 15th Executive Committee’s service is “Promotion and Broadcast”. The executive committee will strive to continuously improve its service to it members and provide them with a profound and passionate experience as much as possible. It will also maintain with all its effort the society’s prominent position and its established ties with the Student Union and other student societies." />
+   
+   <!-- 在這下方加入新的信息 -->
+   <!-- 每一個 tag 都是你的頁面，比如 http://.../#!exco16 就會用到下面的信息 -->
+
+   <image root="Image/Page/Exco16/">
+      <Charlotte nameC="何晨茜" nameE="Charlotte" nickname="" postC="主   席" postE="President" itsc="" phone="54999285" word="晨曦照海面，藝帆當遠航。冰雪巧娥眉，何家女兒郎。莊員心凝聚，親切有擔當。用心又盡責，引領新篇章。" />
+      <Estella nameC="王藝楠" nameE="Estella" nickname="" postC="内務副主席" postE="Internal Vice-President" itsc="" phone="61704208" word="新莊藝帆IVP\n煮飯year plan樣樣行\n人美手巧效率高\n莊內關係靠她調" />
+      <Becky nameC="黃嘉琪" nameE="Becky" nickname="" postC="外務副主席" postE="External Vice-President" itsc="" phone="55006152" word="南粵有佳人，黃氏女嘉琪。\n言若黃鐘大呂，字字鏗鏘有力。\n德於嘉言懿行，如沐春風細雨。\n人勝琪花玉樹，更媲詠雪之女。\n身居外務之職，精於國粵雙語。\n縱橫捭闔，折衝樽俎，\n一代女傑，花落民藝。" />
+      <Holly nameC="陳怡" nameE="Holly" nickname="" postC="財務秘書" postE="Financial Secretary" itsc="" phone="56170015" word="Soc內最會花錢獎最終贏家\n2020年「諾貝爾數學獎」獲得者\n科大最愛學習獎得主\n清水灣可愛與美麗大賽冠軍\n不愛收拾協會榮譽成員\n《奇葩說》全集觀看者\n追星能力三級證書取得者\n平易近人，有點憨憨" />
+      <Paula nameC="楊牧" nameE="Paula" nickname="" postC="內務秘書" postE="Internal Secretary" itsc="" phone="51082976" word="認真負責記錄每一次會議的內務\n喜歡電影畫畫和搖滾的江蘇妹子\n可以安靜正經地完成自己的任務\n卻也能幽默有趣給大家帶來歡笑" />
+      <Cici nameC="朱誠成" nameE="Cici" nickname="" postC="內務秘書" postE="Internal Secretary" itsc="" phone="68758959" word="博覽群書還愛學習\n朱唇皓齒喜愛嗑君\n一心一意服務民藝\n惟妙惟肖口才了得\n是我們毫不掩飾自己熱愛事物\n並為之吶喊打call的感性的CC小朋友呀" />
+      <Sophie nameC="鄭昱霏" nameE="Sophie" nickname="" postC="外務秘書" postE="External Secretary" itsc="" phone="62198230" word="她她她，西南成都一枝花。\n吃吃吃，餐桌怎能少了辣。\n甜甜甜，可愛笑容小臉頰。\n耍耍耍，乒乓健兒汗水灑。\n學學學，科大明天就靠她。\n誰誰誰，當然是我們小霏呀！" />
+      <Angel nameC="董佳淇" nameE="Angel" nickname="" postC="市場秘書" postE="Marketing Secretary" itsc="" phone="52247360" word="莊里有個姑娘叫佳淇，\n長得好看又善良，\n一雙美麗的大眼睛，頭髮順又長。\n在藝帆成立的那個晚上，\n她來到我們身旁。\n多少次我往前看看將行的路，\n你站在我們身旁，\n伴我們度過那段時光，\n今生今世我們永不忘。" />
+      <Jeffery nameC="馬健衡" nameE="Jeffery" nickname="" postC="市場秘書" postE="Marketing Secretary" itsc="" phone="51010419" word="看\n我們\n小馬哥\n宇宙最甜\n清水灣乖仔\n可萌可A可帥\n凶的時候超級凶\n浮生若夢仙風道骨\n音樂小王子電腦小達人\n丟錢包丟房卡丟pencil一級冠軍" />
+      <Coral nameC="孫潤" nameE="Coral" nickname="" postC="公共關係秘書" postE="Public Relation Secretary" itsc="" phone="69263656" word="孫潤，人如其名，溫潤如玉，端莊大方。\n頗愛國風歌曲與文物博物館。\n然一溫婉女子如此，亦喜恐怖電影一類。\n問其來處，江蘇長壽之都；\n問其歸處，藝帆起航之處。" />
+      <Deckard nameC="湯子宸" nameE="Deckard" nickname="" postC="總務秘書" postE="General Secretary" itsc="" phone="51070015" word="藝帆中的重量擔當，勵志與大媽探討人生\n搭角鐵舉重若輕，做手工粗中有細。\n山東漢子剛而不悍，仙境人家誠而不呆。\n會打球，好王者，\n藝帆老湯是也。" />      
+      <Ethan nameC="吳易" nameE="Ethan" nickname="" postC="總務秘書" postE="General Secretary" itsc="" phone="65892465" word="生於山城，育於渝州；\n結廬科大，悠游清水灣。\n修工學之科，尚民藝之氣；\n任總務之職，向隱者之風。\n隨呼隨喚到處搬，就是一塊聽話的磚；\n訂場印飛跑得快，大媽也要點個贊！\n常常看海空自嘆，何以爭流搏巨浪？\n思之，唯有乘藝帆！" />
+      <May nameC="傅子軒" nameE="May" nickname="" postC="宣傳秘書" postE="Promotion Secretary" itsc="" phone="54450637" word="既喜美食旅遊，\n又愛語言建築。\n莊內認真負責，\n莊外活潑有趣。\n何處尋此寶藏女孩？\n藝帆中尋立宣子軒。" />
+      <Tony nameC="涂一凡" nameE="Tony" nickname="" postC="IT 秘書" postE="IT Secretary" itsc="" phone="54958827" word="說話斯斯文文，\n個性成熟穩重。\n畫畫叫人佩服，\n設計一點不差。\n超強編程屬性，\n擁有清晰思路。\n作為藝帆IT,\n值得大家信賴。" />
+   </image>
+
+   <exco16 root="Image/Page/Exco16/">
+      <Charlotte nameC="何晨茜" nameE="Charlotte" nickname="" postC="主   席" postE="President" itsc="" phone="54999285" word="晨曦照海面，藝帆當遠航。冰雪巧娥眉，何家女兒郎。莊員心凝聚，親切有擔當。用心又盡責，引領新篇章。" />
+      <Estella nameC="王藝楠" nameE="Estella" nickname="" postC="内務副主席" postE="Internal Vice-President" itsc="" phone="61704208" word="新莊藝帆IVP\n煮飯year plan樣樣行\n人美手巧效率高\n莊內關係靠她調" />
+      <Becky nameC="黃嘉琪" nameE="Becky" nickname="" postC="外務副主席" postE="External Vice-President" itsc="" phone="55006152" word="南粵有佳人，黃氏女嘉琪。\n言若黃鐘大呂，字字鏗鏘有力。\n德於嘉言懿行，如沐春風細雨。\n人勝琪花玉樹，更媲詠雪之女。\n身居外務之職，精於國粵雙語。\n縱橫捭闔，折衝樽俎，\n一代女傑，花落民藝。" />
+      <Holly nameC="陳怡" nameE="Holly" nickname="" postC="財務秘書" postE="Financial Secretary" itsc="" phone="56170015" word="Soc內最會花錢獎最終贏家\n2020年「諾貝爾數學獎」獲得者\n科大最愛學習獎得主\n清水灣可愛與美麗大賽冠軍\n不愛收拾協會榮譽成員\n《奇葩說》全集觀看者\n追星能力三級證書取得者\n平易近人，有點憨憨" />
+      <Paula nameC="楊牧" nameE="Paula" nickname="" postC="內務秘書" postE="Internal Secretary" itsc="" phone="51082976" word="認真負責記錄每一次會議的內務\n喜歡電影畫畫和搖滾的江蘇妹子\n可以安靜正經地完成自己的任務\n卻也能幽默有趣給大家帶來歡笑" />
+      <Cici nameC="朱誠成" nameE="Cici" nickname="" postC="內務秘書" postE="Internal Secretary" itsc="" phone="68758959" word="博覽群書還愛學習\n朱唇皓齒喜愛嗑君\n一心一意服務民藝\n惟妙惟肖口才了得\n是我們毫不掩飾自己熱愛事物\n並為之吶喊打call的感性的CC小朋友呀" />
+      <Sophie nameC="鄭昱霏" nameE="Sophie" nickname="" postC="外務秘書" postE="External Secretary" itsc="" phone="62198230" word="她她她，西南成都一枝花。\n吃吃吃，餐桌怎能少了辣。\n甜甜甜，可愛笑容小臉頰。\n耍耍耍，乒乓健兒汗水灑。\n學學學，科大明天就靠她。\n誰誰誰，當然是我們小霏呀！" />
+      <Angel nameC="董佳淇" nameE="Angel" nickname="" postC="市場秘書" postE="Marketing Secretary" itsc="" phone="52247360" word="莊里有個姑娘叫佳淇，\n長得好看又善良，\n一雙美麗的大眼睛，頭髮順又長。\n在藝帆成立的那個晚上，\n她來到我們身旁。\n多少次我往前看看將行的路，\n你站在我們身旁，\n伴我們度過那段時光，\n今生今世我們永不忘。" />
+      <Jeffery nameC="馬健衡" nameE="Jeffery" nickname="" postC="市場秘書" postE="Marketing Secretary" itsc="" phone="51010419" word="看\n我們\n小馬哥\n宇宙最甜\n清水灣乖仔\n可萌可A可帥\n凶的時候超級凶\n浮生若夢仙風道骨\n音樂小王子電腦小達人\n丟錢包丟房卡丟pencil一級冠軍" />
+      <Coral nameC="孫潤" nameE="Coral" nickname="" postC="公共關係秘書" postE="Public Relation Secretary" itsc="" phone="69263656" word="孫潤，人如其名，溫潤如玉，端莊大方。\n頗愛國風歌曲與文物博物館。\n然一溫婉女子如此，亦喜恐怖電影一類。\n問其來處，江蘇長壽之都；\n問其歸處，藝帆起航之處。" />
+      <Deckard nameC="湯子宸" nameE="Deckard" nickname="" postC="總務秘書" postE="General Secretary" itsc="" phone="51070015" word="藝帆中的重量擔當，勵志與大媽探討人生\n搭角鐵舉重若輕，做手工粗中有細。\n山東漢子剛而不悍，仙境人家誠而不呆。\n會打球，好王者，\n藝帆老湯是也。" />      
+      <Ethan nameC="吳易" nameE="Ethan" nickname="" postC="總務秘書" postE="General Secretary" itsc="" phone="65892465" word="生於山城，育於渝州；\n結廬科大，悠游清水灣。\n修工學之科，尚民藝之氣；\n任總務之職，向隱者之風。\n隨呼隨喚到處搬，就是一塊聽話的磚；\n訂場印飛跑得快，大媽也要點個贊！\n常常看海空自嘆，何以爭流搏巨浪？\n思之，唯有乘藝帆！" />
+      <May nameC="傅子軒" nameE="May" nickname="" postC="宣傳秘書" postE="Promotion Secretary" itsc="" phone="54450637" word="既喜美食旅遊，\n又愛語言建築。\n莊內認真負責，\n莊外活潑有趣。\n何處尋此寶藏女孩？\n藝帆中尋立宣子軒。" />
+      <Tony nameC="涂一凡" nameE="Tony" nickname="" postC="IT 秘書" postE="IT Secretary" itsc="" phone="54958827" word="說話斯斯文文，\n個性成熟穩重。\n畫畫叫人佩服，\n設計一點不差。\n超強編程屬性，\n擁有清晰思路。\n作為藝帆IT,\n值得大家信賴。" />
+   </exco16>
+   <exco15 root="Image/Page/Exco15/">
+      <Bolinda nameC="谭沁漪" nameE="Bolinda" nickname="谭  神" postC="主   席" postE="President" itsc="qtanad" phone="59875685" word="我們少女而可愛的主席，活潑有靈氣又熱心助人，是書桌櫥櫃總是整整齊齊的精致女孩和養生及美妝博主。生活中溫柔隨和暖心Girl，工作時有條不紊超靠譜，夢想是做一條輕鬆快樂的鹹魚 " />
+      <Claire nameC="黎彦妤" nameE="Claire" nickname="黎  总" postC="内務副主席" postE="Internal Vice-President" itsc="ylihf" phone="56436324" word="黎總會議紀錄其疾如風，排憂解難其徐如林，脣槍舌劍侵略如火，世人皆醉不動如山，心思缜密難知如陰，拍案而起動如雷霆，實屬藝川mean擔當 " />
+      <Yoyo nameC="張  瑶" nameE="Yoyo" nickname="瑶  姐" postC="外務副主席" postE="External Vice-President" itsc="yzhanghf" phone="54913030" word="求美白求瘦臉卻貌若天仙，講粵語講國語而樣樣精通。會吃雞會提琴並驚豔全場，在科大在藝川正是我瑤姐。 " />
+      <Lizzie nameC="徐伊貝" nameE="Lizzie" nickname="貝  貝" postC="財務秘書" postE="Financial Secretary" itsc="yxubx" phone="51626424" word="她，是誰？徐伊貝，人稱貝貝，藝川財務sec。開會發言羞澀，藝川囊中不羞澀，樂觀開朗溫柔嫻靜。唱歌跳舞樣樣在行，也時常傻笑呆滯。來自彩雲之南，會打羽毛球，空降科大，徐伊貝，就是，她 " />
+      <Shirley nameC="付家怡" nameE="Shirley" nickname="小  台" postC="外務秘書" postE="External Secretary" itsc="jfuah" phone="54246497" word="付家怡，字小台。陝西西安人也。性明朗而不縈心，行自然而無雕飾。好烹飪，凡市井食材，皆可為珍餚良釀。其容手如柔荑, 膚如凝脂，何也？皆因南方有喬木也，小台喜自拍，善用也。有蓋世之才而深藏不露，治世之能而韜光養晦，此人身在何處？科大藝川也。 " />
+      <William_HE nameC="何家銘" nameE="William_HE" nickname="大  銘" postC="市場秘書" postE="Marketing Secretary" itsc="jhebi" phone="54918900" word="愛做gym愛打球，腰好腿好身體棒。可裝高冷可話唠，風趣幽默新疆人。學發哥的粵語，無發哥的發量。熱愛學習熱愛生活，上下求索四海漂泊。 " />
+      <Olivia nameC="于哲睿" nameE="Olivia" nickname="唯  姐" postC="公共關係秘書" postE="Public Relation Secretary" itsc="zyuam" phone="54823313" word="忽聞樂聲二三，偶得閒書四五。善才不易服，妄做風流人物。風格自然復古，文案再三思度，莊務莫躊躇，是爲公關秘書。若問出處，水鄉江南。若尋歸宿，科大藝川。 " />
+      <Roy nameC="黎杰華" nameE="Roy" nickname="Prof LI" postC="總務秘書" postE="General Secretary" itsc="jliec" phone="62192715" word="姐妹叢中一朵花，努力學習哄大媽，繼承外總滴正統，——難得;常被戲稱professor，學習莊務兩開花，他在科大姓名甚？ ——姐花 " />
+      <Andy nameC="童梓涵" nameE="Andy" nickname="猛  男" postC="總務秘書" postE="General Secretary" itsc="ztongab" phone="54930321" word="川出猛男，名童梓涵。體格彪悍，心胸偉岸。嚮往自然，播撒博愛。聞之以謹言，交之以親善。內總務誰可擔，惟我猛男童梓涵！ " />
+      <Regine nameC="周韞沁" nameE="Regine" nickname="Regine" postC="宣傳秘書" postE="Promotion Secretary" itsc="yzhouch" phone="54824492" word="史上最強平宣，carry全莊我周姐。做得一手好poster leaflet等各式promo品，絕不拖ddl的三好青年，集宣傳的絕佳審美和IT的精湛技術於一體，資深宅hall女孩，偶爾liba出沒，academic的背後是對各款手遊和b站的熱愛 " />
+      <William_YANG nameC="楊志睿" nameE="William_YANG" nickname="睿  哥" postC="宣傳秘書" postE="Promotion Secretary" itsc="zyangax" phone="54925498" word="人稱睿哥，隱逸在清水灣的天選之子。以借充電器起家，靠brainstorm聞名，既是LOL小王子，又是非遺「搭dec」的繼承人。是搭dec人裡最會讲東北話的，也是東北人裡最會搭dec的 " />
+      <Mark nameC="夏雲雷" nameE="Mark" nickname="=雲  姐" postC="IT 秘書" postE="IT Secretary" itsc="yxiaao" phone="54919217" word="渤海津門，自古即盛。九河下稍，人才濟濟。中有夏家少年，名諱雲雷。身型挺拔，形貌昳麗。編程得心應手，技藝服教衆生；攝影慧眼獨具，腿腳稱霸香江。一絲不苟理莊務，妥帖練達應人情。恰似夏雲疾雨之迅猛，又如紫電青雷般驚魄，是謂奇才" />
+   </exco15>
+   <exco14 root="Image/Page/Exco14/">
+      <Donna nameC="高   莘" nameE="Donna" nickname="高   哥" postC="主   席" postE="President" itsc="xgaoaq" phone="67792628" word="皎曜星眸遠山眉，不禦鉛華笑如煙。婉詞清歌傳皓齒，拂風，素霓杳嫋兼豪傑。白駒颯遝意氣全，事繁，運籌帷幄心自閑。垂善眾生念江山，西顧，芬木葳蕤長風飛。" />
+      <Niko nameC="馬雪珂" nameE="Nicole" nickname="馬   導" postC="內務副主席" postE="Internal Vice-President" itsc="xmaak" phone="65809816" word="平日裏笑臉盈盈，同大家一起吹水激浪。開會指點江山，把一堆跑偏礦工拉回主題。文可苦撰year plan，武可辣手催due，同時又是聯繫莊內感情的靈魂人物。哪裡民藝，哪裡就有她。充滿氣場而又暖心的girl！" />
+      <Gio nameC="陈梓豪" nameE="Gio" nickname="阿   豪" postC="外務副主席" postE="External Vice-President" itsc="zchencj" phone="69387081" word="擁有可在各地方言間隨意轉換的語言天賦。對外他精通普通話、粵語及英語，輕松玩轉社團之間；對內他在開會時的調侃，都會讓大家找到新的思路。責任心爆棚，如此穩重可靠的男神，你不來一打嘛？" />
+      <Mika nameC="劉子奧" nameE="Mika" nickname="ZAO" postC="財務秘書" postE="Financial Secretary" itsc="zliuca" phone="67651403" word="此湖南小夥本是英俊瀟灑風度翩翩的理院大佬，繼承了作為財務那細緻嚴謹的大腦。這也就使他上到LV，下到大白菜，一應價格，統統知曉。如此人才，必當成就科大第一富soc" />
+      <Maria nameC="曹家銘" nameE="Maria" nickname="小   銘" postC="內務秘書" postE="Internal Secretary" itsc="jcaoak" phone="98598285" word="一個文靜又充滿風趣的少女，除了有清新可人的畫風，大方謙和的舉止，超快速的辦事效率，還是soc裏的主持擔當，以及KinKi Kids的超級迷妹喔" />
+      <Charlie nameC="曹   亮" nameE="Charlie" nickname="亮   亮" postC="外務秘書" postE="External Secretary" itsc="lcaoak" phone="91415655" word="心中有許多願望：count鐘，外交樣樣要。只有多啦A亮可以帶著我soc實現夢想。可愛圓圓胖臉龐，秧歌舞蹈樣樣行，總會在蜜汁尷尬的時候給予歡笑。" />
+      <Irene nameC="方星棉" nameE="Irene" nickname="方大星" postC="市場秘書" postE="Marketing Secretary" itsc="xfangag" phone="96027522" word="市場秘書是不是就是能縱橫市場的秘書啊？曾經創下業績神話又能深藏功與名，可以霸氣俐落又能歡樂可愛，聽rap的女子是不是有夠酷了呢！總結：弘藝好媽sad~" />
+      <Terrance nameC="穆藝騰" nameE="Terrance" nickname="鴉   鴉" postC="公共關係秘書" postE="Public Relation Secretary" itsc="ymuab" phone="53093167" word="鴉鴉是個有才情的孩子（雖然已經有魚尾紋了）。主持擔當，腦洞清奇，人稱（其實是自稱哈哈）清水灣懂氫。鴉鴉是我們的靈感源泉，也是最精緻的豬豬鋁孩哦！" />
+      <Charles nameC="胡   謙" nameE="Charles" nickname="三   弟" postC="總務秘書" postE="General Secretary" itsc="qhuae" phone="51098588" word="跑步速度堪比記者，名副其實的國家二級勞動模範。哄得了大媽，訂得了venue，搬得了物資，Soc裏的帥氣萬能小助手，性格超級暖。總結起來一句話：想讓他幹啥，他就能幹啥！" />
+      <David nameC="雷   禕" nameE="David" nickname="伊   伊" postC="總務秘書" postE="General Secretary" itsc="yleiaf" phone="62156225" word="傳說科大星系民藝星有一位守護神，他身倦電流，盡顯王者風範，他就是，雷伊！哦不，雷禕······傳聞他以風馳電掣之速，往返於香港與深圳之間，以拔山舉鼎之力，扛數噸物資於肩。民藝三大soc寳之一，外表像個壯漢，內心卻是小公主的雷大總管。" />
+      <LinChen nameC="林   晨" nameE="Lin Chen" nickname="男   的" postC="宣傳秘書" postE="Promotion Secretary" itsc="clinai" phone="62154397" word="我們美麗又可愛的promo sec，超級文藝，很古風，又很有情調，有個性（她寫的詩有拿到過大獎喔！）。該表達自己的意見時也可以很到位。一句話:靜如處子，動如脫兔" />
+      <Yuki nameC="謝孟君" nameE="Yuki" nickname="老   謝" postC="宣傳秘書" postE="Promotion Secretary" itsc="mktseab" phone="54890302" word="可愛的yuki是我們的立宣，是一個很溫柔很nice的girl，但同時也可以和大家玩得很開，當一當吐槽役w畫畫和設計都很厲害。總而言之是個文藝的美少女！" />
+      <Johnson nameC="莊   翔" nameE="Johnson" nickname="翔   君" postC="IT 秘書" postE="IT Secretary" itsc="xzhuangaa" phone="67651849" word="用得溜PS，學得會程式設計，畫得好漫畫，搞得懂設計，掉得起頭髮，肝得了莊務，或許是soc裡最carry的了吧。這是一個在寒假也拼命學習的人,一個值得大家信賴的IT 大佬。" />
+   </exco14>
+   <exco13 root="Image/Page/Exco13/">
+      <Leanne nameC="潘林菲" nameE="Leanne" postC="主   席" postE="President" />
+      <Vincent nameC="陶世源" nameE="Vincent" postC="內務副主席" postE="Internal Vice-President" />
+      <Candice nameC="莊曉彥" nameE="Candice" postC="外務副主席" postE="External Vice-President" />
+      <Wendy nameC="范鈺雯" nameE="Wendy" postC="財務秘書" postE="Financial Secretary" />
+      <Cindy nameC="張   藝" nameE="Cindy" postC="內務秘書" postE="Internal Secretary" />
+      <Jade nameC="張世鈺" nameE="Jade" postC="外務秘書" postE="External Secretary" />
+      <Frank nameC="常家誠" nameE="Frank" postC="市場秘書" postE="Marketing Secretary" />
+      <Clara nameC="陳   藝" nameE="Clare" postC="公共關係秘書" postE="Public Relation Secretary" />
+      <Ruby nameC="莊沁茹" nameE="Ruby" postC="總務秘書" postE="General Secretary" />
+      <Path nameC="路修遠" nameE="Path" postC="總務秘書" postE="General Secretary" />
+      <Martin nameC="蔣博涵" nameE="Martin" postC="宣傳秘書" postE="Promotion Secretary" />
+      <Echo nameC="陳卓見" nameE="Echo" postC="宣傳秘書" postE="Promotion Secretary" />
+      <William nameC="杜寅瑋" nameE="William" postC="IT 秘書" postE="IT Secretary" />
+   </exco13>
+   <exco12 root="Image/Page/Exco12/">
+      <Duke nameC="武大可" nameE="Duke              " postC="主   席" postE="President" />
+      <Diana nameC="陸雨辰" nameE="Diana" postC="內務副主席" postE="Internal Vice-President" />
+      <Catherine nameC="張愷欣" nameE="Catherine" postC="外務副主席" postE="External Vice-President" />
+      <Robert nameC="張瑞陽" nameE="Robert" postC="財務秘書" postE="Financial Secretary" />
+      <Rebecca nameC="鄧雨晴" nameE="Rebecca" postC="內務秘書" postE="Internal Secretary" />
+      <Crystina nameC="張馨予" nameE="Crystina" postC="外務秘書" postE="External Secretary" />
+      <Burboss nameC="李   博" nameE="Burboss" postC="市場秘書" postE="Marketing Secretary" />
+      <Jenny nameC="石   岳" nameE="Jenny" postC="公共關係秘書" postE="Public Relation Secretary" />
+      <Tony nameC="杜東鴻" nameE="Tony  " postC="總務秘書" postE="General Secretary" />
+      <Jerry nameC="徐嘉瑞" nameE="Jerry    " nickname="嘉   瑞" postC="總務秘書" postE="General Secretary" />
+      <Belle nameC="邵雨晴" nameE="Belle" postC="宣傳秘書" postE="Promotion Secretary" />
+      <Mike nameC="汪文龍" nameE="Mike" nickname="汪   汪" postC="宣傳秘書" postE="Promotion Secretary" />
+      <Jarvis nameC="吳   凡" nameE="Jarvis " postC="IT 秘書" postE="IT Secretary" />
+   </exco12>
+   <exco11 root="Image/Page/Exco11/">
+      <zyl nameC="張亦蕾" nameE="ZHANG Yilei" postC="主   席" postE="President" />
+      <cy nameC="陳   源" nameE="CHEN Yuan" postC="內務副主席" postE="Internal Vice-President" />
+      <gzl nameC="郭紫琳" nameE="GUO Zilin" postC="外務副主席" postE="External Vice-President" />
+      <hs nameC="黃   山" nameE="HUANG Shan" postC="財務秘書" postE="Financial Secretary" />
+      <pyj nameC="潘昱潔" nameE="PAN Yujie" postC="內務秘書" postE="Internal Secretary" />
+      <zyw nameC="趙雲蔚" nameE="ZHAO Yunwei" postC="外務秘書" postE="External Secretary" />
+      <ymw nameC="楊銘武" nameE="YANG Mingwu" postC="市場秘書" postE="Marketing Secretary" />
+      <dxn nameC="杜信男" nameE="DU Xinnan" postC="總務秘書" postE="General Secretary" />
+      <ny nameC="寧   延" nameE="NING Yan" postC="總務秘書" postE="General Secretary" />
+      <qmy nameC="秦夢儀" nameE="QIN Mengyi" postC="宣傳秘書" postE="Promotion Secretary" />
+      <wjh nameC="王佳慧" nameE="WANG Jiahui" postC="宣傳秘書" postE="Promotion Secretary" />
+      <lyf nameC="李燁鋒" nameE="LI Yefeng   " postC="IT 秘書" postE="IT Secretary" />
+   </exco11>
+   <exco10 root="Image/Page/Exco10/">
+      <lw nameC="劉   雯" nameE="LIU Wen" postC="主   席" postE="President" />
+      <myx nameC="馬元翔" nameE="MA Yuanxiang" postC="內務副主席" postE="Internal Vice-President" />
+      <hpg nameC="何平歌" nameE="HE Pingge" postC="外務副主席" postE="External Vice-President" />
+      <zjm nameC="張金銘" nameE="ZHANG Jinming" postC="財務秘書" postE="Financial Secretary" />
+      <xwt nameC="徐文韜" nameE="XU Wentao" postC="內務秘書" postE="Internal Secretary" />
+      <xg nameC="謝   谷" nameE="XIE Gu" postC="外務秘書" postE="External Secretary" />
+      <lbc nameC="羅柏聰" nameE="LUO Baicong" postC="市場秘書" postE="Marketing Secretary" />
+      <zxh nameC="曾曉慧" nameE="ZENG Xiaohui" postC="公關秘書" postE="Public Relation Secretary" />
+      <cty nameC="陳泰佑" nameE="CHEN Taiyou" postC="總務秘書" postE="General Secretary" />
+      <gbw nameC="高百汶" nameE="GAO Baiwen" postC="總務秘書" postE="General Secretary" />
+      <czq nameC="陳梓琪" nameE="CHEN Ziqi" postC="宣傳秘書" postE="Promotion Secretary" />
+      <lth nameC="李天浩" nameE="LI Tianhao" postC="宣傳秘書" postE="Promotion Secretary" />
+      <yxy nameC="余心遠" nameE="YU Xinyuan" postC="IT 秘書" postE="IT Secretary" />
+   </exco10>
+   <exco09 root="Image/Page/Exco09/">
+      <csh nameC="陳思豪" nameE="CHEN Sihao" postC="主   席" postE="President" />
+      <zsy nameC="曾思源" nameE="ZENG Siyuan" postC="內務副主席" postE="Internal Vice-President" />
+      <trs nameC="譚銳燊" nameE="TAN Ruishen" postC="外務副主席" postE="External Vice-President" />
+      <yxc nameC="袁欣晨" nameE="YUAN Xinchen" postC="財務秘書" postE="Financial Secretary" />
+      <wjh nameC="汪俊涵" nameE="WANG Junhan" postC="內務秘書" postE="Internal Secretary" />
+      <yyx nameC="袁怡萱" nameE="YUAN Yixuan" postC="外務秘書" postE="External Secretary" />
+      <ljd nameC="李俊德" nameE="LI Junde" postC="市場秘書" postE="Marketing Secretary" />
+      <dyq nameC="段雨晴" nameE="DUAN Yuqing" postC="公關秘書" postE="Public Relation Secretary" />
+      <zxc nameC="詹旭聰" nameE="ZHAN Xucong" postC="總務秘書" postE="General Secretary" />
+      <zhm nameC="張洪銘" nameE="ZHANG Hongming" postC="總務秘書" postE="General Secretary" />
+      <wq nameC="吳   奇" nameE="WU Qi" postC="宣傳秘書" postE="Promotion Secretary" />
+      <wy nameC="吳   鈺" nameE="WU Yu" postC="宣傳秘書" postE="Promotion Secretary" />
+      <xs nameC="熊   帥" nameE="XIONG Shuai" postC="IT 秘書" postE="IT Secretary" />
+   </exco09>
+   <subcom12>
+      <subcom nameC="曹樂遙" itsc="lcaoaj" />
+      <subcom nameC="陳   藝" itsc="ychends" />
+      <subcom nameC="陳雨桐" itsc="ychendm" />
+      <subcom nameC="杜寅瑋" itsc="ydual" />
+      <subcom nameC="範鈺雯" itsc="yfanaj" />
+      <subcom nameC="侯愷俊" itsc="khouab" />
+      <subcom nameC="黃梓傑" itsc="zhuangbc" />
+      <subcom nameC="孔德玥" itsc="dkongad" />
+      <subcom nameC="孔康懿" itsc="kkongaa" />
+      <subcom nameC="劉雙睿" itsc="sliuaz" />
+      <subcom nameC="劉昕儀" itsc="xliuce" />
+      <subcom nameC="潘林菲" itsc="lpanaf" />
+      <subcom nameC="容子橋" itsc="zrong" />
+      <subcom nameC="宋   薇" itsc="wsongaf" />
+      <subcom nameC="陶世源" itsc="vstao" />
+      <subcom nameC="滕松園" itsc="steng" />
+      <subcom nameC="王品橋" itsc="pwangah" />
+      <subcom nameC="於久智" itsc="jyuar" />
+      <subcom nameC="餘岳霖" itsc="yyubc" />
+      <subcom nameC="張世鈺" itsc="szhangbi" />
+      <subcom nameC="張   藝" itsc="yzhangfg" />
+      <subcom nameC="張亦凡" itsc="yzhangfc" />
+      <subcom nameC="朱浩仁" itsc="hzhual" />
+      <subcom nameC="莊沁茹" itsc="qzhuangaa" />
+      <subcom nameC="莊曉彥" itsc="xzhuang" />
+   </subcom12>
+   <news>
+      <news timeY="2020" timeD="4/2" titleC="第拾陸屆執行委員會正式上任" titleE="The sixteenth session of our student group has commenced with effect！" wordC="" wordE="" />
+      <news timeY="2019" timeD="4/2" titleC="第拾伍屆執行委員會正式上任" titleE="The fifteenth session of our student group has commenced with effect！" wordC="" wordE="" />
+      <news timeY="2018" timeD="3/4" titleC="第拾肆屆執行委員會正式上任" titleE="The fourteenth session of our student group has commenced with effect！" wordC="" wordE="" />
+      <news timeY="2017" timeD="3/5" titleC="第拾叁屆執行委員會正式上任" titleE="The thirteenth session of our student group has commenced with effect！" wordC="" wordE="" />
+      <news timeY="2016" timeD="6/11" titleC="廚神大賽開放報名！" titleE="Master of Cooking is now open for registration!" wordC="" wordE="" />
+      <news timeY="2016" timeD="6/11" titleC="新的網站 藝點不同" titleE="New website is now operating" wordC="" wordE="" />
+   </news>
+   <functionC root="Image/Function/Function16/">
+      <function name="Prop" nameC="宣傳期" nameE="Promotion Period" briefC="民藝坊第十六屆候選內閣----\n藝帆！破浪載千帆，相擁藝中人！" briefE="We, Artventurer, are here!" date="2020.2.14-3.14" enroll="past" img="logo.png">
+      </function>
+      <function name="AGM" nameC="年度會議" nameE="Annual General Meeting" briefC="民藝坊的第十六屆執行委員會經歷數個日日夜夜，將全年度的活動方案不斷豐富完善，力求給所有會員提供最好的服務！" briefE="The 16th commit of Chinese Folk Art Society used countless days to develop the year plan of 2019 in order to give every members a brilliant experience in CFAS!" date="2019.3.22-4.1" enroll="past" img="meeting.png">
+      </function>
+      <function name="even" nameC="第七封信" nameE="A Case in Emails" briefC="究竟是誰，在絕望之際向你呼救？ta又為何把唯一的希望寄託在你的身上？ta究竟身處何處？又究竟遭遇了些什麼？\n\n 你能否願意，通過一封封郵件，幫助ta解開陌生房間的一個個謎題，揭開ta身上的驚天秘密？" briefE="Who is he/she? Why does he/she write to you? Where is he/she and what had he/she been through? Can you help him/her out of the strange room by working out the puzzles in the letter one by one? Can you disclose the big secret hidden behind him/her?" date="2020.5.6-5.10" enroll="past" img="seven.png">
+      </function>
+      <function name="summer" nameC="夏日記憶" nameE="Summer Time" briefC="春季學期結束已有三週，\n是打算嚐遍天下美食，\n-還是親自點亮中華小當家的技能？\n是打算出去走一走看一看，\n-還是打算宅在家中“雲旅行”？\n\n不管您有什麼打算，中國民間藝術坊都能為您提供展現您豐富假期生活的平台！" briefE="Are you going to become a foodie, or a skilled cook? \n Are you going to stay at home, or travel to see spectacular views? \n Whatever plans you hold in mind, CFAS provides you with a distinguished platform to show your holiday life!" date="2020.6.24-7.26" enroll="past" img="summer.png">
+      </function>
+      <function name="yesterday" nameC="從前慢" nameE="Yesterday Once More" briefC="如今的時代追求快，生活的節奏也越來越快，我們卻開始覺得惘然若失。我們開始懷念，懷念那個車馬郵件都慢的時代。\n\n 如果從前是美好的，為何不來一場“文藝復興”？有些非說不可的話，我想一字一句地寫給你。這個夏天，和民藝一起回到從前。" briefE="“Days used to be so slow, so was the car, the horse, the mail. All your life was spent with the only one.” \n Nowadays, we are living in a fast-paced era. The modern lifestyle makes us frequently recall the good old days and feel lost. This summer, CFAS will bring you back to the good old time." date="2020.7.8-9.2" enroll="past" img="yesterday.png">
+      </function>
+      <function name="study" nameC="枕典席文" nameE="Study Week" briefC="學期伊始，你是否列下過條條計劃，立下過歷歷誓言？\n\n 如今，“鹹魚翻身”的目標猶在，而你是否還保持著最初的動力？\n\n 不用擔心，民藝坊為你量身打造了“枕典席文”學習週，現在開始學習，還來得及！" briefE="During this special period, all courses are delivered in online mode and our classrooms are turned into Zoom meeting rooms. There is no face-to-face communication but only computer screen. Are you getting tired of studying alone? Don’t worry! Chinese Folk Art Society is now holding a “Study Week” especially for you." date="2020.9.10-9.27" enroll="past" img="study.png">
+      </function>
+      <function name="northsourth" nameC="南轅北轍" nameE="South vs North?" briefC="民藝坊新活動“南轅北轍”為你提供了一展語言絕技的機會！此活動可理解為“地域版誰是臥底” —— 如果你是“兒化音”滿分的廣州人，如果你是平翹舌音不分的遼寧人，如果你是北京口音的偽裝達人，快來調動你的七十二變，瞞天過海！千里傳聲，究竟誰是臥底，等你來揭曉！" briefE="If you are good at affecting your accent and vocabulary,  why not come to join the CFAS new activity “South vs North?” to show your language talent? If you are from the north part of China but can speak like a Southern, you can pretend to be a Southern to talk with them and vice versa. We also provide different sessions to choose." date="2020.10.17-18" enroll="past" img="northsouth.jpg">
+      </function>
+      <function name="peony" nameC="牡丹亭的秘密" nameE="The Peony Pavilion" briefC="本次活動，民藝坊邀請到了香港科技大學人文社科學院李思涯教授來為大家講一講《牡丹亭》的浪漫傳奇。\n\n《牡丹亭》為何能成為經典？《牡丹亭》中的情理究竟是什麼樣的？《牡丹亭》的作者是什麼樣的人？来民藝坊線上Lecture聆聽這部傳奇劇作的點點滴滴，感受中國傳統文化的魅力！" briefE="Professor Li Siya, from the Division of Humanity, HKUST, is invited by CFAS to talk about the interesting story of The Peony Pavilion on Nov.18 th. If you are interested, don’t hesitate to sign up for the lecture. HLTH1010 2 hours is waiting for you!" date="2020.11.18" enroll="past" img="peony.png">
+      </function>
+   </functionC>
+   <!-- 老的 function 的時間是 time="..." 但是 functionC 裡面的寫的是 date="..." 這也是為什麼直接複製過來的無法顯示日期-->
+   <functionO>
+      <functionO15 root="Image/Function/FunctionO15/">
+         <function name="Prop" nameC="宣傳期" nameE="Promotion Period" briefC="民藝坊第十五屆候選內閣----藝川,閃亮登場。每天晨起的say morning、熱情的活動介紹、豐富的counter遊戲、激昂的火雞chanting、美味的熱食分發、熱鬧的民藝lucky draw…… 每一天我們都用心把自己最好的一面呈現給大家，讓member和non-member看到我們這一年為社團和民藝全心全意的付出！" briefE="We, Brilliart, impressed our members with Say morning everyday, unique counter design, innovative games, workshops, free food, and Lucky Draw!" time="2019.2.8" img="prop.jpg">
+         </function>
+         <agm15 name="AGM" nameC="年度會議" nameE="Annual General Meeting" briefC="民藝坊的第十五屆執行委員會經歷數個日日夜夜，將全年度的活動方案不斷豐富完善，力求給所有會員提供最好的服務！" briefE="The 15th commit of Chinese Folk Art Society used countless days to develop the year plan of 2019 in order to give every members a brilliant experience in CFAS!" time="2018.2.28" enroll="past" img="agm.jpg">
+         </agm15>
+         <Inau15 name="Inau" nameC="換莊典禮" nameE="Inauguration Ceremony" briefC="鷹擊長空，翅翼在天。民藝坊第十四屆就職典禮在LTB舉行。校內外社會人士、教授、社團代表共襄盛舉。見證民藝坊十四、十五莊的交接儀式。莊嚴整肅誓詞是新一屆民藝坊執行委員會對每一位會員的承諾。我們一同期待新的一年裡的感動和驚喜。" briefE="We invited guests from both UST and other universities and communities to witness our inauguration and the promise of serving the members." time="2019.4.2" enroll="past" img="inau.jpg">
+         </Inau15>
+         <Sun name="Sun" nameC="無人破曉" nameE="Before Sunrise" briefC="1937年的上海，歌舞昇平卻暗藏殺機。百樂門的頭牌Lucy小姐在璀璨的燈光下癱倒在地，在場的每一位來賓都似乎有著難言之隱，究竟誰人辣手摧花，又究竟誰人可以迎來破曉。民藝坊為您帶來沉浸式的劇本推理活動，帶你揭開民國時期的面紗。" briefE="Shanghai, 1937, when alme Lucy of Bailemen died instantly,Everyone in the room felt relieved, as if there was something hidden. Who could finally survived till the dawn ?         CFAS will bring you an awesome detective game with the cultural history of the republic of China." time="2019.4.27" venue="Common Room 5+6" enroll="past" img="sun.jpg">
+         </Sun>
+         <Xian name="Xian" nameC="漫行西安" nameE="Trip to Xi'an" briefC="炎炎夏日，民藝坊將帶領大家一探古都西安，尋找封藏在歷史中的輝煌經典以及展現在世界前的繁榮昌盛。" briefE="This summer, CFAS will take you to explore the ancient capital XI'an to find out the prosperity of this beautiful city." time="2019.6.3" enroll="past" img="xian.jpg">
+         </Xian>
+         <Bing name="Bingpi" nameC="冰臨城下" nameE="Snowy Mooncake Workshop" briefC="中秋佳節，在明月佳人的陪伴下，親手製作屬於你自己的團圓月餅。遠在他鄉，希望身邊的同學和民藝能夠給你帶來家的感覺，讓你不再孤單。" briefE="To make your own snowy mooncake with your friends to celebrate the Mid-Autumn festival." time="2019.9.11" enroll="past" img="bing.jpg">
+         </Bing>
+         <Mu name="Woodcut" nameC="入木三分" nameE="Woodcut Workshop" briefC="精緻的刻刀，平整的木板，在這上面盡情開展你的創作吧。民藝將手把手教給你木板雕刻，所有的工具和成品都免費贈送哦" briefE="CFAS will provide a platform for participants with different cultural backgrounds to learn how to make    woodcut pictures and appreciate the beauty of traditional Chinese New Year Picture and the culture behind it" time="2019.10.1" venue="Common Room 1+2" enroll="past" img="mu.jpg">
+         </Mu>
+         <O name="Competition" nameC="百家爭鳴" nameE="The chosen one" briefC="儒法道墨四足鼎立，數百參賽者同臺競技。民藝全新知識競賽帶你暢游那個百家爭鳴的年代，更讓你能夠在百家之中證明自己。還有各式各樣的驚喜大獎等你來拿！" briefE="By the end of the Spring and Autumn Era, hundreds of clans merged either into Confucianism,Taoism, Mohism or Legalism base on individual strength and profit. Each participant, as the leader     of a certain clan, will be fighting for their clan’s reputation in this tournament organized by a secret organization - CFAS." time="2019.10.3" venue="LT-C" enroll="past" img="ming.jpg">
+         </O>
+      </functionO15>
+      <functionO14 root="Image/Function/FunctionO14/">
+         <function nameC="宣傳期" nameE="Promotion Period" time="2018.2" img="1.jpg" />
+         <function nameC="年度會議" nameE="AGM" time="2018.2-3" img="2.jpg" />
+         <function nameC="換莊典禮" nameE="Inauguration Ceremony" time="2018.3" img="3.jpg" />
+         <function nameC="失落之陵" nameE="Lost Tombs" time="2018.4" img="4.jpg" />
+         <function nameC="行在雲南" nameE="Trip into the Southwest" time="2018.6" img="5.jpg" />
+         <function nameC="指上乾坤" nameE="Dough Sculpture Workshop" time="2018.9" img="6.jpg" linkF="https://www.facebook.com/media/set/?set=a.1472133146157205.1073741883.100000816022222" />
+         <function nameC="華山論劍" nameE="The Last One Standing" time="2018.9" img="7.jpg" linkF="https://www.facebook.com/hkustcfas/posts/1852063684830814" />
+         <function nameC="疊扇藏鋒" nameE="Chinese Folding Fan Workshop" time="2018.10" img="8.jpg" linkF="https://www.facebook.com/hkustcfas/posts/1894225180614664" />
+         <function nameC="廚神爭霸之食貫中西" nameE="Who is the Next Top Chef" time="2018.11" img="9.jpg" linkF="https://www.facebook.com/hkustcfas/posts/1934342639936251" />
+      </functionO14>
+      <functionO13 root="Image/Function/FunctionO13/">
+         <function nameC="宣傳期" nameE="Promotion Period" time="2017.2" img="1.jpg" />
+         <function nameC="年度會議" nameE="AGM" time="2017.3" img="2.jpg" />
+         <function nameC="換莊典禮" nameE="Inauguration Ceremony" time="2017.3" img="3.jpg" linkF="https://www.facebook.com/media/set/?set=a.1305304009506787.1073741876.100000816022222" />
+         <function nameC="香味博物館" nameE="The Museum of Fragrance" time="2017.4" img="4.jpg" linkF="https://www.facebook.com/media/set/?set=a.1340035326033655.1073741879.100000816022222" />
+         <function nameC="使至塞上" nameE="Summer Trip" time="2017.5.30-6.6" img="5.jpg" linkF="https://www.facebook.com/media/set/?set=a.1424446614259192.1073741882.100000816022222" />
+         <function nameC="月下花前" nameE="Mid-Autumn Lantern Festival" time="2017.9" img="6.jpg" linkF="https://www.facebook.com/media/set/?set=a.1472133146157205.1073741883.100000816022222" />
+         <function nameC="冰至如歸" nameE="DIY Snow-Skin Mooncakes" time="2017.9" img="7.jpg" linkF="https://www.facebook.com/media/set/?set=a.1472138359490017.1073741885.100000816022222" />
+         <function nameC="登高望遠" nameE="Tour the Mountain" time="2017.9" img="8.jpg" linkF="https://www.facebook.com/media/set/?set=a.1472148069489046.1073741886.100000816022222" />
+         <function nameC="張燈結彩" nameE="Lantern DIY" time="2017.10" img="9.jpg" linkF="https://www.facebook.com/media/set/?set=a.1495468537156999.1073741887.100000816022222" />
+         <function nameC="廚神解百味" nameE="Chef de Cuisine" time="2017.11" img="10.jpg" linkF="https://www.facebook.com/media/set/?set=a.1530937570276762.1073741888.100000816022222" />
+      </functionO13>
+      <functionO12 root="Image/Function/FunctionO12/">
+         <function nameC="宣傳期" nameE="Promotion Period" time="2016.2" img="1.jpg" />
+         <function nameC="年度會議" nameE="AGM" time="2016.3" img="2.jpg" />
+         <function nameC="換莊典禮" nameE="Inauguration Ceremony" time="2016.3" img="3.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1015410758496115.1073741865.100000816022222" />
+         <function nameC="共享春茗" nameE="Teahouse Gathering" time="2016.4" img="4.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1021796961190828.1073741867.100000816022222" />
+         <function nameC="廈遊山海" nameE="Summer Trip" time="2016.5.29-6.6" img="5.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1074831372554053.1073741868.100000816022222" />
+         <function nameC="漁情畫藝" nameE="Fish Skin Workshop" time="2016.9" img="6.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1143352509035272.1073741873.100000816022222" />
+         <function nameC="八方雲集" nameE="Ethnic Gathering" time="2016.9" img="7.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1120703201300203.1073741871.100000816022222" />
+         <function nameC="陶然自得" nameE="Polymer Clay DIY" time="2016.10" img="8.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1147420678628455.1073741874.100000816022222" />
+         <function nameC="廚神爭霸" nameE="Master of Cook" time="2016.11" img="9.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.1178224308881425.1073741875.100000816022222" />
+      </functionO12>
+      <functionO11 root="Image/Function/FunctionO11/">
+         <function nameC="換莊典禮" nameE="Inauguration Ceremony" time="2015-03" img="past1101.jpg" linkF="https://www.facebook.com/hkustcfas" />
+         <function nameC="笑傲江湖" nameE="The Legendary Swordsman" time="2015-04" img="past1102.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.853156988054827.1073741851.100000816022222%26type=3" />
+         <function nameC="溯遊·揚子江" nameE="Travel along the Yangtze River" time="2015-06" img="past1103.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.923212171049308.1073741860.100000816022222%26type=3" />
+         <function nameC="民藝週 花好月圓" nameE="CFAS Week" time="2015-09" img="past1104.jpg" linkF="https://www.facebook.com/hkustcfas" />
+         <function nameC="花好月圓 廚神之夜" nameE="Autumn Cuisine" time="2015-09" img="past1105.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.919885618048630.1073741857.100000816022222%26type=3" />
+         <function nameC="花好月圓 冰心蜜月" nameE="DIY Moon Cake" time="2015-09" img="past1106.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.920664137970778.1073741859.100000816022222%26type=3" />
+         <function nameC="花好月圓 花間尋秋" nameE="Autumn Outing" time="2015-09" img="past1107.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.923806330989892.1073741861.100000816022222%26type=3" />
+         <function nameC="金石風骨" nameE="Seal Carving Workshop" time="2015-10" img="past1108.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.930073043696554.1073741862.100000816022222%26type=3" />
+         <function nameC="一站到底" nameE="Who Is Still Standing?" time="2015-11" img="past1109.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.952327684804423.1073741864.100000816022222%26type=3" />
+      </functionO11>
+      <functionO10 root="Image/Function/FunctionO10/">
+         <function nameC="民藝週 春意濃時" nameE="Spring In The Air" time="2014-03" img="past1001.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.653026008067927.1073741840.100000816022222%26type=3" />
+         <function nameC="春意濃時 小雨油紙傘" nameE="DIY Traditional Umbrella" time="2014-03" img="past1002.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.654820047888523.1073741841.100000816022222%26type=3" />
+         <function nameC="春意濃時 清明上河圖" nameE="Life Along The River" time="2014-03" img="past1003.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.654964227874105.1073741842.100000816022222%26type=3" />
+         <function nameC="春意濃時 驚蟄尋春行" nameE="Track Of Spring" time="2014-03" img="past1004.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.655439651159896.1073741843.100000816022222%26type=3" />
+         <function nameC="一站到底" nameE="Stay To The End" time="2014-04" img="past1005.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.670650359638825.1073741845.100000816022222%26type=3" />
+         <function nameC="行走內蒙古" nameE="Trip To Inner-Mognlia" time="2014-06" img="past1006.jpg" linkF="http://www.facebook.com/hkustcfas" />
+         <function nameC="我是廚神" nameE="I Am The Chef" time="2014-09" img="past1007.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.732789696758224.1073741847.100000816022222%26type=3" />
+         <function nameC="走馬觀燈" nameE="Lamp, Running Lamp" time="2014-10" img="past1008.jpg" linkF="http://www.facebook.com/hkustcfas" />
+         <function nameC="皮藝" nameE="Leather Making Workshop" time="2014-11" img="past1009.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.758640284173165.1073741849.100000816022222%26type=3" />
+      </functionO10>
+      <functionO09 root="Image/Function/FunctionO09/">
+         <function nameC="春之物語" nameE="The Fairy Tale Of Spring" time="2013-03" img="past0901.jpg" linkF="https://www.facebook.com/photo.php?fbid=504025772967952%26set=a.503993759637820.1073741825.100000816022222%26type=1%26theater" />
+         <function nameC="春之物語 裁春" nameE="Spring On The Red Paper" time="2013-03" img="past0902.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.504620942908435.1073741826.100000816022222%26type=3" />
+         <function nameC="春之物語 品春" nameE="Spring On The Tongue" time="2013-03" img="past0903.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.505349376168925.1073741827.100000816022222%26type=3" />
+         <function nameC="春之物語 尋春" nameE="Spring On The Breeze" time="2013-03" img="past0904.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.506489356054927.1073741828.100000816022222%26type=3" />
+         <function nameC="古代智慧大賞玩" nameE="Fun With The Ancient Wisdom" time="2013-04" img="past0905.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.516535718383624.1073741830.100000816022222%26type=3" />
+         <function nameC="民藝講座 易經" nameE="Secret Of Geomancy" time="2013-05" img="past0906.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.524461174257745.1073741831.100000816022222%26type=3" />
+         <function nameC="廚神聯盟" nameE="League Of Cooking" time="2013-09" img="past0907.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.579374862099709.1073741833.100000816022222%26type=3" />
+         <function nameC="印 橡" nameE="Happy Seal Night" time="2013-10" img="past0908.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.579903835380145.1073741834.100000816022222%26type=3" />
+         <function nameC="民藝講座 莊子" nameE="Exploration to Zhuang Zi" time="2013-10" img="past0909.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.593891140648081.1073741835.100000816022222%26type=3" />
+         <function nameC="上 海灘" nameE="Go to the Beach" time="2013-11" img="past0910.jpg" linkF="http://www.facebook.com/hkustcfas" />
+         <function nameC="彩雲之南" nameE="Trip beyond the Cloud" time="2013-12" img="past0911.jpg" linkF="https://www.facebook.com/hkustcfas/media_set?set=a.624011200969408.1073741838.100000816022222%26type=3" />
+      </functionO09>
+   </functionO>
+   <email>
+      <theme>
+         <theme name="Normal" />
+         <theme name="Tea" />
+         <theme name="Trip" />
+         <theme name="Ethnic" />
+         <theme name="Clay" />
+         <theme name="Subcom" />
+      </theme>
+      <cuisine>
+         <email nameC="食在云南" nameE="Taste of Yunnan" content="9n88632g6apdn8ckv1jzkm29cgsxxcgb" contentC="wgezb0hbeyj4q0wzg40zqugv98pxpnjn" contentE="wptr67jnn6k85xoo2soo0mj41zthu6s3" />
+         <email nameC="食在内蒙" nameE="Taste of Inner Mongolia" content="urbdwgccb4jf0t6j8nc6awz0n4a8a9nb" contentC="lehh7ithjxle9bavn5mspn1m27ou390j" contentE="groseb5qxs5po22p84dajduudx3ggsim" />
+         <email nameC="食在海南" nameE="Taste of Hainan" content="xhc6ss478gwaq3lryys9jl2mqhmiwqy0" contentC="ung89dksj83fw43yjbq6hv44arwfnu25" contentE="kkdj5mb6f061xxdw00wcjb8re507nsz0" />
+         <email nameC="食在閩南" nameE="Taste of Fujian" content="hwptib7aehtyg3c8ztv1jqrh8l7tt332" contentC="w1eozjellkrmkfqa6ielmjamftjvtp1v" contentE="3lscqpa7degwzazanot84yvy2cd909ns" />
+         <email nameC="食在北京" nameE="Taste of Beijing" content="o4427500kgcopavjaraz551cw1o06j93" contentC="8ltshsjo7w4kgtwysszhjmsm6yxm9ak5" contentE="zaie4eyr11zi2zt99j8olul6kwbkmmga" />
+         <email nameC="食在川渝" nameE="Taste of Sichuan and Chongqing" content="7jn6iv86h3xb9fh3qo1fgdmktnqsh8fg" contentC="6g6aznp8bm7d6s5ppircclwu8g1egiz8" contentE="0a9a1on9dq7hy5tg642cegwuyvic34a7" />
+         <email nameC="食在淮揚" nameE="Taste of Huaiyang" content="gc6bjvkhnghc7ckdz2p5a13pykvm00xa" contentC="w8t5u7ees4v077drzwcxag29wm9g9amw" contentE="3lxev4ibzd6xxhwqix2zhccvztzdgqba" />
+         <email nameC="食在東北" nameE="Taste of Northeast" content="1pz75z1ujormth98z3csbpjzjcvq0bbb" contentC="dn2vrjpqm1rvzyeuxp4677ukkzd4s9zi" contentE="hm0aedx9gw6qb1nfi6cjcu1pj0jj0hqr" />
+      </cuisine>
+   </email>
+   <sponsor root="Image/Page/Sponsor/">
+      <sponsor nameC="Impact Ints" nameE="Impact Ints" pic="22.png" />
+      <sponsor nameC="GOLDEN LYCA" nameE="GOLDEN LYCA" pic="17.png" />
+      <sponsor nameC="jax coco" nameE="" pic="18.png" />
+      <sponsor nameC="G2000" nameE="" pic="12.jpg" />
+      <sponsor nameC="光波24書網" nameE="24Reader" pic="19.png" />
+      <sponsor nameC="綠野仙蹤" nameE="greenreadings" pic="3.png" />
+      <sponsor nameC="ESET" nameE="ESET" pic="20.jpg" />
+      <sponsor nameC="Party Place" nameE="Party Place" pic="21.jpg" />
+      <sponsor nameC="現代美容中心" nameE="Modern Beauty Salon" pic="8.jpg" />
+      <sponsor nameC="AIA" nameE="AIA" pic="23.png" />
+      <sponsor nameC="ginzeng" nameE="ginzeng" pic="24.jpg" />
+      <sponsor nameC="POP UP" nameE="POP UP" pic="25.jpg" />
+      <sponsor nameC="ZURICH" nameE="ZURICH" pic="26.jpg" />
+      <sponsor nameC="Zwap" nameE="Zwap" pic="27.png" />
+   </sponsor>
+</data>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="content" content="text/html" charset="utf-8"/>
+</head>
+
+<body>
+	<script>
+		
+		var href=window.location.href;
+		if (href.indexOf('?')!=-1) {
+		    ticket = href.slice(href.indexOf('?') + 8, href.length);
+		    alert(ticket);
+           // window.location.href ="https://pumpkin-shortcake-49295.herokuapp.com/validateTicket.php?ticket="+ticket;
+			//window.location.href="http://218.107.197.245/validateTicket.php?ticket="+ticket;
+			//window.location.href="http://127.0.0.1:88/CFASWebsite/validateTicket.php?ticket="+ticket;
+            //window.location.href="https://cas.ust.hk/cas/serviceValidate?service=http://localhost:81/CFASwebsite/cgi-bin/&ticket="+ticket;
+            window.location.href = "http://localhost:81/CFASwebsite/cgi-bin/validateTicket.php?ticket=" + ticket;
+            /*
+			req=$.ajax({
+				type:"get",
+				cache:true,
+				dataType:"jsonp",
+				url:"https://cas.ust.hk/cas/serviceValidate?service=http://ihome.ust.hk/~fwuae/testCAS/&ticket="+ticket,
+				jsonp:"callback",
+				jsonpCallback:"success_jsonpCallback",
+				success:function(data) {
+					//alert(data);
+				},
+				error:function() {
+					alert(250);
+				}
+			});
+			*/
+			/*
+			req=new XMLHttpRequest();
+			req.onreadystatechange=
+			req.dataType="jsonp";
+			//req.open("GET","https://cas.ust.hk/cas/serviceValidate?service=http://ihome.ust.hk/~fwuae/testCAS/&ticket="+ticket,true);
+			req.open("GET","aa.aspx",true);
+			req.send();
+			*/
+		} else {
+			window.location.href="https://cas.ust.hk/cas/login?service=http://ihome.ust.hk/~fwuae/testCAS/";
+		}
+		
+		
+	</script>
+</body>
+
+</html>
